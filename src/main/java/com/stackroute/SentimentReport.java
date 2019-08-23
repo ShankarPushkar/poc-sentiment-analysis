@@ -1,6 +1,4 @@
-package com.stackroute.sentiment.report;
-
-import com.stackroute.sentiment.classifier.SentimentClassifier;
+package com.stackroute;
 
 public class SentimentReport {
     double sentimentScore;
@@ -19,6 +17,10 @@ public class SentimentReport {
         return sentimentType;
     }
 
+    public void setSentimentType(String sentimentType) {
+        this.sentimentType = sentimentType;
+    }
+
     public SentimentClassifier getSentimentClassifier() {
         return sentimentClassifier;
     }
@@ -26,6 +28,4 @@ public class SentimentReport {
     public void setSentimentClassifier(SentimentClassifier sentimentClassifier) {
         this.sentimentClassifier = sentimentClassifier;
     }
-
-
 }

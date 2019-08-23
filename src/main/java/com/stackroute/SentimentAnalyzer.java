@@ -1,7 +1,5 @@
-package com.stackroute.sentiment.analyzer;
+package com.stackroute;
 
-import com.stackroute.sentiment.classifier.SentimentClassifier;
-import com.stackroute.sentiment.report.SentimentReport;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -42,7 +40,7 @@ public class SentimentAnalyzer {
 
                 sentimentReport.setSentimentScore(RNNCoreAnnotations.getPredictedClass(tree));
                 sentimentReport.setSentimentType(sentimentType);
-                sentimentReport.setSentimentClass(sentimentClassifier);
+                sentimentReport.setSentimentClassifier(sentimentClassifier);
             }
         }
         return sentimentReport;

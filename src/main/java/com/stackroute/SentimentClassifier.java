@@ -1,4 +1,4 @@
-package com.stackroute.sentiment.classifier;
+package com.stackroute;
 
 public class SentimentClassifier {
     double veryPositive;
