@@ -1,18 +1,49 @@
 package com.stackroute.sentiment.classifier;
 
 public class SentimentClassifier {
-    public void setVeryPositive(double round) {
+    double veryPositive;
+    double positive;
+    double neutral;
+    double negative;
+    double veryNegative;
+
+    public double getVeryPositive() {
+        return veryPositive;
     }
 
-    public void setVeryNegative(double round) {
+    public void setVeryPositive(double veryPositive) {
+        this.veryPositive = veryPositive;
     }
 
-    public void setPositive(double round) {
+    public double getPositive() {
+        return positive;
     }
 
-    public void setNeutral(double round) {
+    public void setPositive(double positive) {
+        this.positive = positive;
     }
 
-    public void setNegative(double round) {
+    public double getNeutral() {
+        return neutral;
+    }
+
+    public void setNeutral(double neutral) {
+        this.neutral = neutral;
+    }
+
+    public double getNegative() {
+        return negative;
+    }
+
+    public void setNegative(double negative) {
+        this.negative = negative;
+    }
+
+    public double getVeryNegative() {
+        return veryNegative;
+    }
+
+    public void setVeryNegative(double veryNegative) {
+        this.veryNegative = veryNegative;
     }
 }
